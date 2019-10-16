@@ -20,3 +20,10 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 # Run emacs for setup
 emacs --insecure
+
+# Copy over my personal .spacemacs file for configs
+cp ~/.spacemacs ~/.spacemacs.bak
+cp ./.spacemacs ~/.spacemacs
+
+# Re-run emacs to install custom .spacemacs configs
+emacs --insecure
